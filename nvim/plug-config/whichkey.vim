@@ -26,7 +26,6 @@ let g:which_key_map['?'] = 'search help under word'
 let g:which_key_map['C'] = [':Colors'                                          , 'color schemes']
 let g:which_key_map['d'] = [ ':Bdelete'                                        , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+'   , 'explorer' ]
-let g:which_key_map['f'] = [ ':Files'                                          , 'find file' ]
 let g:which_key_map['h'] = [ '<C-W>s'                                          , 'split horizontal']
 let g:which_key_map['o'] = 'new line below'
 let g:which_key_map['O'] = 'new line above'
@@ -153,6 +152,5 @@ let g:which_key_map.T = {
       \ 'r' : [':set relativenumber!'              , 'relative numbers'],
       \ 'a' : [':set number! relativenumber!'      , 'all numbers'],
       \ }
-
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

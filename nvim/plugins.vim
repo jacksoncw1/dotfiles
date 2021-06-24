@@ -3,7 +3,21 @@ if empty(glob('$HOME/.config/nvim/plugged'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
-
+"NerdTree Git status config
+let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+"
 call plug#begin('$HOME/.config/nvim/plugged')
 " Conquer of Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -23,10 +37,10 @@ Plug 'autozimu/LanguageClient-neovim', {
       \ 'do': 'bash install.sh',
       \ }
 Plug 'sheerun/vim-polyglot'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
-" Plug 'nvim-treesitter/nvim-treesitter'
 " More color scheme options
+" NerdTree plugins
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'flazz/vim-colorschemes'
 " Airline
