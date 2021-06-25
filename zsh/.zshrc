@@ -8,4 +8,5 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 [[ -f $HOME/dotfiles/zsh/plugins.zsh ]] && source $HOME/dotfiles/zsh/plugins.zsh
 [[ -f $HOME/dotfiles/zsh/misc.zsh ]] && source $HOME/dotfiles/zsh/misc.zsh
 [[ -f $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
+[[ -f $HOME/dotfiles/zsh/spaceship.zsh ]] && source $HOME/dotfiles/zsh/spaceship.zsh
 

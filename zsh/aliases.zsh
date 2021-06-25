@@ -14,16 +14,7 @@ alias nims='vim $HOME/dotfiles/nvim/settings.vim'
 alias nimp='vim $HOME/dotfiles/nvim/plugins.vim'
 alias nimm='vim $HOME/dotfiles/nvim/plug-config/whichkey.vim $HOME/dotfiles/nvim/mappings.vim'
 alias nimt='vim $HOME/dotfiles/nvim/themes.vim'
-alias cat='pygmentize -g'
-alias rgr='ranger'
-alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
-alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
-alias vsc-keyrepeat='defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false'
 
-# Git
-alias gcona='git config user.name "Joshua Ward" ; git config user.email "j2udevelopment@gmail.com"'
-alias gconu='git config --unset user.name ; git config --unset user.email'
-alias gconl='git config -l'
 alias lzg='lazygit'
 
 # LSD
@@ -97,15 +88,6 @@ alias dsp='docker system prune'
 alias dspa='docker system prune -a'
 alias dstart='docker start -ai'
 
-# Terraform
-alias tf='terraform'
-alias tfi='terraform init'
-alias tfp='terraform plan'
-alias tfa='terraform apply'
-alias tfwl='terraform workspace list'
-alias tfws='terraform workspace select'
-alias tfo='terraform output -json kubeconfig | jq -r .'
-
 # Gradle
 alias gw='./gradlew'
 alias gwa='./gradlew assemble'
@@ -117,9 +99,6 @@ alias gwpml='./gradlew publishToMavenLocal'
 alias gwce='./gradlew cleanEclipse'
 alias gwe='./gradlew eclipse'
 alias gwcee='./gradlew cleanEclipse eclipse'
-
-# Maven
-alias create-nifi-processor='mvn archetype:generate -DarchetypeGroupId=org.apache.nifi -DarchetypeArtifactId=nifi-processor-bundle-archetype -DarchetypeVersion=1.9.2 -DnifiVersion=1.9.2'
 
 # Hugo
 alias hs='hugo serve'
@@ -133,15 +112,3 @@ alias vr='vagrant resume'
 alias vd='vagrant destroy'
 alias vrl='vagrant reload'
 alias vp='vagrant provision'
-alias vssh='vagrant ssh'
-
-# Homebrew
-alias hbv='cd $(brew --repo) && git checkout tags/2.4.16 && cd -'
-
-# Recording
-alias arec='asciinema rec'
-alias aplay='asciinema play'
-alias trec='termtosvg -t ~/dotfiles/terminal-recorders/termtosvg/p10k-template.svg'
-
-# Hex Code Util
-alias hexs='xxd -psd'
