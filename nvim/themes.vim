@@ -1,3 +1,3 @@
 syntax enable
-colorscheme palenight
+colorscheme base16-atelierlakeside
 " colorscheme nvcode
