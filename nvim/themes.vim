@@ -1,3 +1,4 @@
 syntax enable
-colorscheme base16-atelierlakeside
+colorscheme snazzy
 " colorscheme nvcode
+" colorscheme base16-atelierlakeside
