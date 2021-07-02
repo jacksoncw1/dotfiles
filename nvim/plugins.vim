@@ -36,9 +36,9 @@ Plug 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
       \ }
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 " Tree-sitter
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " More color scheme options
 " NerdTree plugins
 Plug 'preservim/nerdtree' |
@@ -99,4 +99,4 @@ source $HOME/dotfiles/nvim/plug-config/floaterm.vim
 source $HOME/dotfiles/nvim/plug-config/goyo.vim
 source $HOME/dotfiles/nvim/plug-config/prettier.vim
 source $HOME/dotfiles/nvim/plug-config/markdownpreview.vim
-" source $HOME/dotfiles/nvim/plug-config/treesitter.vim
+source $HOME/dotfiles/nvim/plug-config/treesitter.vim
