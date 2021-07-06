@@ -83,6 +83,8 @@ Plug 'moll/vim-bbye'
 Plug 'blueyed/vim-diminactive'
 " Be smarter about project directories
 Plug 'airblade/vim-rooter'
+" Peek at lines when given a line number
+Plug 'nacro90/numb.nvim'
 call plug#end()
 
 source $HOME/dotfiles/nvim/plug-config/coc.vim
@@ -100,3 +102,4 @@ source $HOME/dotfiles/nvim/plug-config/goyo.vim
 source $HOME/dotfiles/nvim/plug-config/prettier.vim
 source $HOME/dotfiles/nvim/plug-config/markdownpreview.vim
 source $HOME/dotfiles/nvim/plug-config/treesitter.vim
+source $HOME/dotfiles/nvim/plug-config/numb.vim
