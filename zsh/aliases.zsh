@@ -112,3 +112,8 @@ alias vr='vagrant resume'
 alias vd='vagrant destroy'
 alias vrl='vagrant reload'
 alias vp='vagrant provision'
+
+# Yarn
+alias y='yarn'
+alias yrl='yarn run link'
+alias yl='yarn link'

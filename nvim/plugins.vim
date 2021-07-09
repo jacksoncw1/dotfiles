@@ -41,8 +41,10 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " More color scheme options
 " NerdTree plugins
-Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'preservim/nerdtree' |
+"             \ Plug 'Xuyuanp/nerdtree-git-plugin'
+"CHAD Tree plugin
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'flazz/vim-colorschemes'
 " Airline
