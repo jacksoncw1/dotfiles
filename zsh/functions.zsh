@@ -8,7 +8,7 @@ psg() { ps aux | rg "$*" }
 psf() { ps aux | fzf }
 
 # Powerlevel10k
-theme() { /bin/bash "$HOME"/dotfiles/scripts/p10k-theme-menu.sh ; source "$HOME"/.zshrc }
+theme() { /bin/bash "$HOME"/dotfiles/iterm/iterm-theme-menu.sh ; source "$HOME"/.zshrc }
 
 # Docker
 digr() { docker images | rg "$1" }
