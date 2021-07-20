@@ -1,6 +1,8 @@
 syntax enable
 " colorscheme white
 " colorscheme Lightning
-colorscheme snazzy
+" colorscheme snazzy
+colorscheme deep-space
+" colorscheme peachpuff
 " colorscheme nvcode
 " colorscheme base16-atelierlakeside
