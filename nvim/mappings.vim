@@ -78,3 +78,24 @@ nnoremap <leader>? :h <C-R>=expand("<cword>")<CR><CR>
 " WhichKey
 nnoremap <silent> <leader> :silent <c-u> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
+" Default keybinds for easy motion:
+"     Default Mapping      | Details
+    " ---------------------|----------------------------------------------
+    " <Leader><Leader>f{char}      | Find {char} to the right. See |f|.
+    " <Leader><Leader>F{char}      | Find {char} to the left. See |F|.
+    " <Leader><Leader>t{char}      | Till before the {char} to the right. See |t|.
+    " <Leader><Leader>T{char}      | Till after the {char} to the left. See |T|.
+    " <Leader><Leader>w            | Beginning of word forward. See |w|.
+    " <Leader><Leader>W            | Beginning of WORD forward. See |W|.
+    " <Leader><Leader>b            | Beginning of word backward. See |b|.
+    " <Leader><Leader>B            | Beginning of WORD backward. See |B|.
+    " <Leader><Leader>e            | End of word forward. See |e|.
+    " <Leader><Leader>E            | End of WORD forward. See |E|.
+    " <Leader><Leader>ge           | End of word backward. See |ge|.
+    " <Leader><Leader>gE           | End of WORD backward. See |gE|.
+    " <Leader><Leader>j            | Line downward. See |j|.
+    " <Leader><Leader>k            | Line upward. See |k|.
+    " <Leader><Leader>n            | Jump to latest "/" or "?" forward. See |n|.
+    " <Leader><Leader>N            | Jump to latest "/" or "?" backward. See |N|.
+    " <Leader><Leader>s            | Find(Search) {char} forward and backward.
+    "                      | See |f| and |F|.

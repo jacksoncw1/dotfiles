@@ -63,6 +63,8 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'unblevable/quick-scope'
 " Sneak motion
 Plug 'justinmk/vim-sneak'
+" Easy motion
+Plug 'easymotion/vim-easymotion'
 " Start screen for vim
 Plug 'mhinz/vim-startify'
 " Never forget key maps
