@@ -41,10 +41,10 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " More color scheme options
 " NerdTree plugins
-" Plug 'preservim/nerdtree' |
-"             \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
 "CHAD Tree plugin
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+" Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'flazz/vim-colorschemes'
 " Airline
@@ -89,6 +89,7 @@ Plug 'blueyed/vim-diminactive'
 Plug 'airblade/vim-rooter'
 " Peek at lines when given a line number
 Plug 'nacro90/numb.nvim'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 source $HOME/dotfiles/nvim/plug-config/coc.vim
