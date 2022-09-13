@@ -13,8 +13,13 @@ export ZSH="$HOME/.oh-my-zsh"
 export MYVIMRC="$HOME/.config/nvim/init.vim"
 export XDG_CONFIG_HOME="$HOME/.config"
 # Kubernetes
-export KUBECONFIG="$HOME/.kube/config"
+export KUBECONFIG="$HOME/.kube/config":"$HOME/.kube/stan-dev.config"
 export KUBE_EDITOR="nvim"
 # FZF
 export FZF_BASE=/usr/local/opt/fzf/install
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
+# K9s
+export PATH="/Users/jacksoncw1/.local/bin:$PATH"
+export PATH="/Users/jacksoncw1/Library/Python/3.10/bin:$PATH"
+# Java
+export JAVA_HOME="/Users/jacksoncw1/bin/jdk-11.0.9.1+1/Contents/Home"

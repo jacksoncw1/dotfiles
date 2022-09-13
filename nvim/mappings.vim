@@ -39,10 +39,14 @@ inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
-" CHAD Tree
-nnoremap <leader>n <cmd>CHADopen<cr>
-nnoremap <leader>l <cmd>call setqflist([])<cr>
-
+" " CHAD Tree
+" nnoremap <leader>n <cmd>CHADopen<cr>
+" nnoremap <leader>l <cmd>call setqflist([])<cr>
+" NERD TREE
+" nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 " -------------------
 "  Window management
 " -------------------

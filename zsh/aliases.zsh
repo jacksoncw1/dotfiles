@@ -17,6 +17,11 @@ alias nimt='vim $HOME/dotfiles/nvim/themes.vim'
 
 alias lzg='lazygit'
 
+
+### TEMP WORK AROUND FOR PRE-COMMIT NOT WORKING PROPERLY
+alias python="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3"
+alias pre-commit="python ~/bin/pre-commit-2.19.0.pyz"
+
 # LSD
 alias ls='lsd'
 alias l='ls -l'
@@ -50,6 +55,10 @@ alias krmevictions='kubectl get pods -A | grep Evicted | awk '{print \$2}' | xar
 alias ktx='kubectx'
 alias kns='kubens'
 
+#Python
+alias py='python3'
+alias activate='source .env/bin/activate'
+
 # Helm
 alias hi='helm install'
 alias hin='helm install -n'
@@ -70,6 +79,8 @@ alias sd='skaffold delete'
 alias sdp='skaffold delete -p'
 alias sdb='skaffold debug --port-forward'
 alias sb='skaffold build'
+alias srca='skaffold run --cache-artifacts=false --status-check=false'
+alias srcat='skaffold run --cache-artifacts=false --status-check=false --tail'
 
 # Docker
 alias doc='docker'

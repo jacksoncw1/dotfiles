@@ -1,19 +1,20 @@
 # General
 af() { alias | fzf }
-afg() { alias | rg "$*" }
-lg() { ls -l | rg "$*" }
+afg() { alias | grep "$*" }
+lg() { ls -l | grep "$*" }
 lf() { ls -l | fzf }
-lsg() { ls | rg "$*" }
-psg() { ps aux | rg "$*" }
+lsg() { ls | grep "$*" }
+psg() { ps aux | grep "$*" }
 psf() { ps aux | fzf }
 
 # Powerlevel10k
 theme() { /bin/bash "$HOME"/dotfiles/iterm/iterm-theme-menu.sh ; source "$HOME"/.zshrc }
 
 # Docker
-digr() { docker images | rg "$1" }
-digrx() { docker images | rg "$1" | xargs -L2 | awk '{print($3)}' }
+alias drmid='docker rmi $(docker images -f 'dangling=true' -q)'
 dif() { docker images | fzf }
-drmig() { docker rmi "$(docker images | rg "$1" | xargs -L2 | awk '{print($3)}')" }
-drmigf() { docker rmi --force "$(docker images | rg "$1" | xargs -L2 | awk '{print($3)}')" }
+digr() { docker images | grep "$1" }
+digrx() { docker images | grep "$1" | xargs -L1 | awk '{print($3)}' }
+drmig() { docker images | grep "$1" | awk '{print($3)}' | xargs -L1 docker rmi }
+drmigf() { docker images | grep "$1" | awk '{print($3)}' | xargs -L1 docker rmi --force }
 lint() { docker run --rm -e RUN_LOCAL=true -v "$(pwd)":/tmp/lint/ github/super-linter }

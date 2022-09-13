@@ -3,7 +3,6 @@ unsetopt inc_append_history
 # Reloads the history whenever you use it
 unsetopt share_history
 # Enables auto-completion
-autoload -U compinit && compinit
 # Let pyenv set the Python version
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
@@ -14,6 +13,7 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^[[3~' delete-char
 bindkey '^[3;5~' delete-char
 # Autocompletion stuff
+autoload -U compinit && compinit
 typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
 if [ $(date +'%j') != $updated_at ]; then
   compinit -i
@@ -44,4 +44,4 @@ setopt interactive_comments # allow comments in interactive shells
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate # enable approximate matches for completion
-zstyle ':completion:*' sort
+# zstyle ':completion:*' sort
