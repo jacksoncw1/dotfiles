@@ -8,7 +8,7 @@ psg() { ps aux | grep "$*" }
 psf() { ps aux | fzf }
 
 # Powerlevel10k
-theme() { /bin/bash "$HOME"/dotfiles/iterm/iterm-theme-menu.sh ; source "$HOME"/.zshrc }
+theme() { /bin/bash "$XDG_CONFIG_HOME"/dotfiles/iterm/iterm-theme-menu.sh ; source "$XDG_CONFIG_HOME"/.zshrc }
 
 # Docker
 alias drmid='docker rmi $(docker images -f 'dangling=true' -q)'

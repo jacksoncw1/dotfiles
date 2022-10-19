@@ -1,3 +1,4 @@
+export XDG_CONFIG_HOME="$HOME/.config"
 export PATH="/Users/jacksoncw1/bin:$PATH"
 export EDITOR="nvim"
 # History
@@ -10,10 +11,9 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # ZSH
 export ZSH="$HOME/.oh-my-zsh"
 # Vim
-export MYVIMRC="$HOME/.config/nvim/init.vim"
-export XDG_CONFIG_HOME="$HOME/.config"
+export MYVIMRC="$XDG_CONFIG_HOME/dotfiles/nvim/init.vim"
 # Kubernetes
-export KUBECONFIG="$HOME/.kube/config":"$HOME/.kube/stan-dev.config"
+export KUBECONFIG="$HOME/.kube/config"
 export KUBE_EDITOR="nvim"
 # FZF
 export FZF_BASE=/usr/local/opt/fzf/install
@@ -22,4 +22,4 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 export PATH="/Users/jacksoncw1/.local/bin:$PATH"
 export PATH="/Users/jacksoncw1/Library/Python/3.10/bin:$PATH"
 # Java
-export JAVA_HOME="/Users/jacksoncw1/bin/jdk-11.0.9.1+1/Contents/Home"
+export JAVA_HOME="/Users/jacksoncw1/bin/jdk-11.0.15+10/Contents/Home"

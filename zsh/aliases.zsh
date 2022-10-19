@@ -3,24 +3,24 @@ alias src='source $HOME/.zshrc'
 alias vi='nvim'
 alias vim='nvim'
 alias zim='vim $HOME/.zshrc'
-alias dim='vim $HOME/dotfiles/zsh/.zshrc'
-alias dima='vim $HOME/dotfiles/zsh/aliases.zsh'
-alias dime='vim $HOME/dotfiles/zsh/exports.zsh'
-alias dimf='vim $HOME/dotfiles/zsh/functions.zsh'
-alias dimp='vim $HOME/dotfiles/zsh/plugins.zsh'
-alias dimm='vim $HOME/dotfiles/zsh/misc.zsh'
-alias nim='vim $HOME/dotfiles/nvim/init.vim'
-alias nims='vim $HOME/dotfiles/nvim/settings.vim'
-alias nimp='vim $HOME/dotfiles/nvim/plugins.vim'
-alias nimm='vim $HOME/dotfiles/nvim/plug-config/whichkey.vim $HOME/dotfiles/nvim/mappings.vim'
-alias nimt='vim $HOME/dotfiles/nvim/themes.vim'
+alias dim='vim $XDG_CONFIG_HOME/dotfiles/zsh/.zshrc'
+alias dima='vim $XDG_CONFIG_HOME/dotfiles/zsh/aliases.zsh'
+alias dime='vim $XDG_CONFIG_HOME/dotfiles/zsh/exports.zsh'
+alias dimf='vim $XDG_CONFIG_HOME/dotfiles/zsh/functions.zsh'
+alias dimp='vim $XDG_CONFIG_HOME/dotfiles/zsh/plugins.zsh'
+alias dimm='vim $XDG_CONFIG_HOME/dotfiles/zsh/misc.zsh'
+alias nim='vim $XDG_CONFIG_HOME/dotfiles/nvim/init.vim'
+alias nims='vim $XDG_CONFIG_HOME/dotfiles/nvim/settings.vim'
+alias nimp='vim $XDG_CONFIG_HOME/dotfiles/nvim/plugins.vim'
+alias nimm='vim $XDG_CONFIG_HOME/dotfiles/nvim/plug-config/whichkey.vim $XDG_CONFIG_HOME/dotfiles/nvim/mappings.vim'
+alias nimt='vim $XDG_CONFIG_HOME/dotfiles/nvim/themes.vim'
 
 alias lzg='lazygit'
 
 
 ### TEMP WORK AROUND FOR PRE-COMMIT NOT WORKING PROPERLY
-alias python="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3"
-alias pre-commit="python ~/bin/pre-commit-2.19.0.pyz"
+# alias python="/Library/Frameworks/Python.framework/Versions/3.10/bin/python3"
+# alias pre-commit="python ~/bin/pre-commit-2.19.0.pyz"
 
 # LSD
 alias ls='lsd'
@@ -57,7 +57,7 @@ alias kns='kubens'
 
 #Python
 alias py='python3'
-alias activate='source .env/bin/activate'
+alias activate='source .venv/bin/activate'
 
 # Helm
 alias hi='helm install'

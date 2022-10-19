@@ -17,14 +17,15 @@ plugins=(
     fancy-ctrl-z
     vagrant
 )
-#Antibody plugins setup
-# Load antibody plugin manager
-source <(antibody init)
+#Zplug setup
+# Load zplug manager
+source ~/.zplug/init.zsh
+
 
 # Plugins
-antibody bundle zdharma/fast-syntax-highlighting
-antibody bundle zsh-users/zsh-autosuggestions
-antibody bundle zsh-users/zsh-history-substring-search
-antibody bundle zsh-users/zsh-completions
-# antibody bundle ahmetb/kubectx
+zplug "zdharma/fast-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
+zplug "jonmosco/kube-ps1"
 
