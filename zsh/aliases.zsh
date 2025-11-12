@@ -23,11 +23,18 @@ alias lzg='lazygit'
 # alias pre-commit="python ~/bin/pre-commit-2.19.0.pyz"
 
 # LSD
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias la='ls -a'
+# alias lla='ls -la'
+# alias lt='ls --tree'
+
+# # EXZ
+# alias ls="eza --icons"
+# alias l="eza --icons -lah"
+# alias lt="eza --tree"
+# alias lta="eza -a --tree"
+#
 
 # Java
 alias java8='export JAVA_HOME=$JAVA_8_HOME; java -version'

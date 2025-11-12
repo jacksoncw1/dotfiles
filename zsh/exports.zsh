@@ -22,5 +22,9 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 export PATH="/Users/jacksoncw1/.local/bin:$PATH"
 export PATH="/Users/jacksoncw1/Library/Python/3.10/bin:$PATH"
 # Java
-# export JAVA_HOME="/Users/jacksoncw1/bin/jdk-11.0.15+10/Contents/Home"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home"
+# export JAVA_HOME="/Users/jacksoncw1/bin/jdk-11.0.9.1+1/Contents/Home"
+#export JAVA_HOME="/Users/jacksoncw1/bin/jdk/Contents/Home/"
+export JAVA_HOME=/Users/jacksoncw1/bin/jdk-test/jdk-17.0.5+8/Contents/Home
+#export JAVA_HOME="/Users/jacksoncw1/bin/graalvm-jdk-17.0.11+7.1/Contents/Home/"
+# GraalVM
+export GRAALVM_HOME="/Users/jacksoncw1/bin/graalvm-jdk-17.0.11+7.1/Contents/Home/"
